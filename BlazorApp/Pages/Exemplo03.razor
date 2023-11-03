@@ -1,0 +1,47 @@
+﻿@page "/exemplo3"
+
+<PageTitle>Exemplo 03 - HTML</PageTitle>
+
+<h1>Exemplo 03 - HTML</h1>
+<h2>Cadastros de preferências</h2>
+<form action="paginaDestino" method="get">
+    <fieldset>
+        <legend>Preferências</legend>
+        <div>
+            <label for="">Nome:</label>
+            <br />
+            <input type="text" name="txtNome" id="txtNome" />
+        </div>
+        <br />
+        <div>
+            <label for="">Ano de nascimento:</label>
+            <br />
+            <input type="number"
+                   name="txtAnoNascimento"
+                   id="txtAnoNascimento"
+                   min="1900-01-01"
+                   max="2100-12-31" />
+        </div>
+        <br />
+        <div>
+            <label for=""> Selecione o seu gênero de filme favorito: </label>
+            <br />
+            <input type="checkbox"
+                   name="chkGenero"
+                   id="chkGenero"
+                   value="1"
+                   checked />
+            Ficção
+            <input type="checkbox" name="chkGenero" id="chkGenero" value="2" />
+            Ação
+            <input type="checkbox" name="chkGenero" id="chkGenero" value="3" />
+            Comédia
+        </div>
+        <br />
+        <div>
+            <input type="radio" name="rdLocal" id="rdLocal" value="1" /> Praia
+            <input type="radio" name="rdLocal" id="rdLocal" value="2" /> Cachoeira
+            <input type="radio" name="rdLocal" id="rdLocal" value="3" /> Trilha
+        </div>
+    </fieldset>
+</form>

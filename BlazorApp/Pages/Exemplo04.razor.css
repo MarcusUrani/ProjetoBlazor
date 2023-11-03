@@ -1,0 +1,68 @@
+﻿div {
+    font-weight: 700;
+    margin: 15px;
+    height: 40vh;
+    padding: 10px;
+    text-align: justify;
+    width: 60vw;
+}
+
+.div1 {
+    border: double red 7px;
+}
+
+.div2 {
+    border-left: solid blue 7px;
+}
+
+.div3 {
+    border-right: dotted green 8px;
+}
+
+.div4 {
+    border-top: dashed orangered 10px;
+}
+
+.div5 {
+    border-bottom: dashed orangered 8px;
+}
+
+.div6 {
+    background-color: cornflowerblue;
+    border-radius: 20px;
+    height: 200px;
+    width: 200px;
+}
+
+.div7 {
+    background-color: orangered;
+    border-radius: 20px 150px;
+    height: 200px;
+    width: 200px;
+}
+
+.div8 {
+    background-color: chartreuse;
+    border-radius: 20px 150px 150px;
+    height: 200px;
+    width: 200px;
+}
+
+.div9 {
+    background-color: gold;
+    border-radius: 20px 150px 150px 80px;
+    height: 200px;
+    width: 200px;
+}
+
+@media(max-width: 1068px) {
+    div {
+        height: auto;
+    }
+}
+
+@media(max-width: 638px) {
+    div {
+        width: 80vw;
+    }
+}
