@@ -7,30 +7,30 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="App\css\app.css" />
-    <Content Include="App\css\bootstrap\bootstrap.min.css" />
-    <Content Include="App\css\bootstrap\bootstrap.min.css.map" />
-    <Content Include="App\css\open-iconic\FONT-LICENSE" />
-    <Content Include="App\css\open-iconic\font\css\open-iconic-bootstrap.min.css" />
-    <Content Include="App\css\open-iconic\font\fonts\open-iconic.eot" />
-    <Content Include="App\css\open-iconic\font\fonts\open-iconic.otf" />
-    <Content Include="App\css\open-iconic\font\fonts\open-iconic.svg" />
-    <Content Include="App\css\open-iconic\font\fonts\open-iconic.ttf" />
-    <Content Include="App\css\open-iconic\font\fonts\open-iconic.woff" />
-    <Content Include="App\css\open-iconic\ICON-LICENSE" />
-    <Content Include="App\css\open-iconic\README.md" />
-    <Content Include="App\favicon.png" />
-    <Content Include="App\icon-192.png" />
-    <Content Include="App\index.html" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="7.0.10" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="7.0.10" PrivateAssets="all" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\" />
+    <None Include="wwwroot\css\app.css" />
+    <None Include="wwwroot\css\bootstrap\bootstrap.min.css" />
+    <None Include="wwwroot\css\bootstrap\bootstrap.min.css.map" />
+    <None Include="wwwroot\css\open-iconic\FONT-LICENSE" />
+    <None Include="wwwroot\css\open-iconic\font\css\open-iconic-bootstrap.min.css" />
+    <None Include="wwwroot\css\open-iconic\font\fonts\open-iconic.eot" />
+    <None Include="wwwroot\css\open-iconic\font\fonts\open-iconic.otf" />
+    <None Include="wwwroot\css\open-iconic\font\fonts\open-iconic.svg" />
+    <None Include="wwwroot\css\open-iconic\font\fonts\open-iconic.ttf" />
+    <None Include="wwwroot\css\open-iconic\font\fonts\open-iconic.woff" />
+    <None Include="wwwroot\css\open-iconic\ICON-LICENSE" />
+    <None Include="wwwroot\css\open-iconic\README.md" />
+    <None Include="wwwroot\favicon.png" />
+    <None Include="wwwroot\icon-192.png" />
+    <None Include="wwwroot\index.html" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="App\" />
   </ItemGroup>
 
 </Project>
