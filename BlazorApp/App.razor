@@ -4,9 +4,10 @@
         <FocusOnNavigate RouteData="@routeData" Selector="h1" />
     </Found>
     <NotFound>
-        <PageTitle>Not found</PageTitle>
+        <PageTitle>Erro 404 - Parece que você se perdeu</PageTitle>
         <LayoutView Layout="@typeof(MainLayout)">
-            <p role="alert">Sorry, there's nothing at this address.</p>
+            <p role="alert">Não há nada para ver aqui.</p>
+            <a href="/">Volte para a civilização</a>
         </LayoutView>
     </NotFound>
 </Router>
