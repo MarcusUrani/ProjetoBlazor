@@ -1,0 +1,109 @@
+﻿@page "/exemplo9"
+
+<PageTitle>Bootstrap - Formulários</PageTitle>
+
+<div class="container pt-5">
+    <div class="card">
+        <div class="card-header bg-success text-white txt_title">
+            Cadastro de Funcionário
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-3">
+                    <label for="txtCpf">CPF:</label>
+                    <input type="text"
+                           name="txtCpf"
+                           id="txtCpf"
+                           class="form-control" />
+                </div>
+                <div class="col-3">
+                    <label for="txtRg">RG:</label>
+                    <input type="text" name="txtRg" id="txtRg" class="form-control" />
+                </div>
+                <div class="col-6">
+                    <label for="txtNome">Nome:</label>
+                    <input type="text"
+                           name="txtNome"
+                           id="txtNome"
+                           class="form-control" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <label for="txtDtNascimento">Data de nascimento:</label>
+                    <input type="date"
+                           name="txtDtNascimento"
+                           id="txtDtNascimento"
+                           class="form-control" />
+                </div>
+                <div class="col-3">
+                    <label for="txtTelefone">Telefone:</label>
+                    <input type="text"
+                           name="txtTelefone"
+                           id="txtTelefone"
+                           class="form-control" />
+                </div>
+                <div class="col-6">
+                    <label for="txtEndereco">Endereco:</label>
+                    <input type="text"
+                           name="txtEndereco"
+                           id="txtEndereco"
+                           class="form-control" />
+                </div>
+            </div>
+            <div class="pt-4">
+                <label for="" class="txt_title">Funcionários Cadastrados</label>
+                <div class="table-container">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>RG</th>
+                                <th>Nome</th>
+                                <th>Telefone</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>13232324</td>
+                                <td>José das couves</td>
+                                <td>6113232324</td>
+                            </tr>
+                            <tr>
+                                <td>13232324</td>
+                                <td>Maria das couves</td>
+                                <td>6113232324</td>
+                            </tr>
+                            <tr>
+                                <td>13232324</td>
+                                <td>Luiza das couves</td>
+                                <td>6113232324</td>
+                            </tr>
+                            <tr>
+                                <td>13232324</td>
+                                <td>José das couves</td>
+                                <td>6113232324</td>
+                            </tr>
+                            <tr>
+                                <td>13232324</td>
+                                <td>José das couves</td>
+                                <td>6113232324</td>
+                            </tr>
+                            <tr>
+                                <td>13232324</td>
+                                <td>José das couves</td>
+                                <td>6113232324</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="card-footer">
+            <div class="form-group">
+                <button type="button" class="btn btn-success float-end">
+                    Cadastrar
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
