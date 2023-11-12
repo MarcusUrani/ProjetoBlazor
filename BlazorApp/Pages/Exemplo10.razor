@@ -1,0 +1,25 @@
+﻿@page "/exemplo10"
+
+<PageTitle>Exemplo 10 - Bônus</PageTitle>
+
+<h1>Calculador de IMC</h1>
+
+<label for="altura">Altura (em metros)</label>
+<input @bind="alturaUsuario" id="altura" type="number" />
+
+<label for="peso">Peso (em quilogramas)</label>
+<input @bind="pesoUsuario" id="peso" type="number" />
+
+<button @onclick="CalcularImc">Calcular IMC</button>
+<label>O IMC é <span>@imcResultado</span></label>
+
+@code {
+    private double alturaUsuario { get; set; }
+    private double pesoUsuario { get; set; }
+    private double imcResultado { get; set; }
+
+    private void CalcularImc()
+    {
+        imcResultado = Math.Round(pesoUsuario / Math.Pow(alturaUsuario, 2), 2);
+    }
+}
