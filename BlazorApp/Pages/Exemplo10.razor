@@ -27,11 +27,6 @@
 
     private string? Exibir => resultado ? "ocultar" : null;
 
-    private void ToggleNavMenu()
-    {
-       
-    }
-
     private void CalcularImc()
     {
         imcResultado = Math.Round(pesoUsuario / Math.Pow(alturaUsuario, 2), 2);
