@@ -1,3 +1,17 @@
+div::-webkit-scrollbar {
+    width: 12px;
+}
+
+div::-webkit-scrollbar-track {
+    background: none;
+}
+
+div::-webkit-scrollbar-thumb {
+    background-color: none; 
+    border-radius: 20px; 
+    border: 2px solid rgba(255, 255, 255, 0.4);
+}
+
 .navbar-toggler {
     background-color: rgba(255, 255, 255, 0.1);
 }
