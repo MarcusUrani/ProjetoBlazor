@@ -13,9 +13,9 @@
         <input @bind="pesoUsuario" class="form-control esconder_setas" id="peso" min="0" type="number" />
     </div>
     <div class="form-group mt-3">
-        <button @onclick="CalcularImc" class="btn btn-primary form-control">Calcular IMC</button>
+        <button @onclick="CalcularImc" @onclick="ExibirResultado" class="btn btn-primary form-control">Calcular IMC</button>
     </div>
-    <p class="resultado_imc">O seu IMC é <span>@imcResultado </span> você está <span>@imcEscala</span></p>
+    <p class="resultado_imc @Exibir">O seu IMC é <span>@imcResultado </span> você está <span>@imcEscala</span></p>
 </div>
 
 @code {
@@ -23,7 +23,14 @@
     private double pesoUsuario { get; set; }
     private double imcResultado { get; set; }
     private string imcEscala { get; set; }
+    private bool resultado = false;
 
+    private string? Exibir => resultado ? "ocultar" : null;
+
+    private void ToggleNavMenu()
+    {
+        resultado = !resultado;
+    }
 
     private void CalcularImc()
     {
@@ -31,18 +38,23 @@
 
         if(imcResultado < 18.5)
         {
+            resultado = true;
             imcEscala = "abaixo do peso";
         } else if(imcResultado >= 18.5 & imcResultado <=24.9)
         {
+            resultado = true;
             imcEscala = "no peso ideal";
         } else if(imcResultado >= 25 & imcResultado <= 29.9)
         {
+            resultado = true;
             imcEscala = "acima do peso";
         } else if(imcResultado >= 30 & imcResultado <= 34.9)
         {
+            resultado = true;
             imcEscala = "com obesidade grau I";
         } else
         {
+            resultado = true;
             imcEscala = "com obesidade grau II";
         }
     }
