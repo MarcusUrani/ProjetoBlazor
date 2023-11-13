@@ -1,2 +1,9 @@
-﻿body {
+﻿.esconder_setas::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    appearance:none;
+}
+
+.esconder_setas {
+    -moz-appearance: textfield;
+    appearance: textfield;
 }
