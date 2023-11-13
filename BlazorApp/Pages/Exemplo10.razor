@@ -15,16 +15,36 @@
     <div class="form-group mt-3">
         <button @onclick="CalcularImc" class="btn btn-primary form-control">Calcular IMC</button>
     </div>
-    <p>O seu IMC é <span> @imcResultado</span></p>
+    <p class="resultado_imc">O seu IMC é <span>@imcResultado </span> você está <span>@imcEscala</span></p>
 </div>
 
 @code {
     private double alturaUsuario { get; set; }
     private double pesoUsuario { get; set; }
     private double imcResultado { get; set; }
+    private string imcEscala { get; set; }
+
+
 
     private void CalcularImc()
     {
         imcResultado = Math.Round(pesoUsuario / Math.Pow(alturaUsuario, 2), 2);
+
+        if(imcResultado < 18.5)
+        {
+            imcEscala = "abaixo do peso";
+        } else if(imcResultado >= 18.5 & imcResultado <=24.9)
+        {
+            imcEscala = "no peso ideal";
+        } else if(imcResultado >= 25 & imcResultado <= 29.9)
+        {
+            imcEscala = "acima do peso";
+        } else if(imcResultado >= 30 & imcResultado <= 34.9)
+        {
+            imcEscala = "com obesidade grau I";
+        } else
+        {
+            imcEscala = "com obesidade grau II";
+        }
     }
 }

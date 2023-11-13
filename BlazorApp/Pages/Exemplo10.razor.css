@@ -7,3 +7,9 @@
     -moz-appearance: textfield;
     appearance: textfield;
 }
+
+.resultado_imc {
+    font-size: 1.3rem;
+    margin-top: .5rem;
+    text-align: center;
+}
